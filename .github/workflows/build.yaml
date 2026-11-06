@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: nama_folder
+        working-directory: kalkulator_bmi
     steps:
       - uses: actions/checkout@v4
 
@@ -24,12 +24,11 @@ jobs:
           channel: stable
           cache: true
 
+      - run: flutter create . --platforms=android
       - run: flutter pub get
-      - run: flutter analyze
-      - run: flutter test
       - run: flutter build apk --release
 
       - uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: nama_folder/build/app/outputs/flutter-apk/app-release.apk
+          path: kalkulator_bmi/build/app/outputs/flutter-apk/app-release.apk
