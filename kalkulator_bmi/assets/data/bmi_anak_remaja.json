@@ -1,0 +1,16 @@
+[
+  {
+    "jenisKelamin": "laki-laki",
+    "umurBulan": 60,
+    "L": -0.3521,
+    "M": 15.2504,
+    "S": 0.08202
+  },
+  {
+    "jenisKelamin": "perempuan",
+    "umurBulan": 60,
+    "L": -0.4727,
+    "M": 15.2443,
+    "S": 0.09139
+  }
+]

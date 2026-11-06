@@ -1,0 +1,55 @@
+
+{
+  "laki_laki": [
+    {
+      "usia": 1,
+      "median": 9.6,
+      "min": 7.7,
+      "max": 12.0
+    },
+    {
+      "usia": 2,
+      "median": 12.2,
+      "min": 9.7,
+      "max": 15.3
+    },
+    {
+      "usia": 3,
+      "median": 14.3,
+      "min": 11.3,
+      "max": 18.3
+    },
+    {
+      "usia": 4,
+      "median": 16.3,
+      "min": 12.7,
+      "max": 21.2
+    }
+  ],
+  "perempuan": [
+    {
+      "usia": 1,
+      "median": 8.9,
+      "min": 7.0,
+      "max": 11.5
+    },
+    {
+      "usia": 2,
+      "median": 11.5,
+      "min": 9.0,
+      "max": 14.8
+    },
+    {
+      "usia": 3,
+      "median": 13.9,
+      "min": 10.8,
+      "max": 18.1
+    },
+    {
+      "usia": 4,
+      "median": 16.1,
+      "min": 12.3,
+      "max": 21.5
+    }
+  ]
+}

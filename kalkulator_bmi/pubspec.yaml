@@ -1,0 +1,8 @@
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/bmi_balita.json
+    - assets/data/bmi_anak_remaja.json
+    - assets/data/bmi_dewasa.json

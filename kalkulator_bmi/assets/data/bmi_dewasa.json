@@ -1,0 +1,27 @@
+
+[
+  {
+    "nama": "Berat Badan Kurang",
+    "batasMin": 0,
+    "batasMax": 18.5,
+    "saran": "Perhatikan asupan nutrisi dan konsumsi makanan bergizi seimbang."
+  },
+  {
+    "nama": "Normal",
+    "batasMin": 18.5,
+    "batasMax": 25,
+    "saran": "Pertahankan pola makan sehat dan rutin berolahraga."
+  },
+  {
+    "nama": "Berat Badan Berlebih",
+    "batasMin": 25,
+    "batasMax": 30,
+    "saran": "Perhatikan pola makan dan tingkatkan aktivitas fisik."
+  },
+  {
+    "nama": "Obesitas",
+    "batasMin": 30,
+    "batasMax": 1000,
+    "saran": "Pertimbangkan konsultasi dengan tenaga kesehatan."
+  }
+]
