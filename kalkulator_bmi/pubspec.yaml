@@ -1,8 +1,19 @@
+name: kalkulator_bmi
+description: Aplikasi kalkulator BMI
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.13.0 <4.0.0' 
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
 
 flutter:
   uses-material-design: true
-
-  assets:
-    - assets/data/bmi_balita.json
-    - assets/data/bmi_anak_remaja.json
-    - assets/data/bmi_dewasa.json
