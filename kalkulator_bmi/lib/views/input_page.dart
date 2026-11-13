@@ -108,12 +108,13 @@ class _InputPageState extends State<InputPage> {
     required String label,
     required TextEditingController controller,
     required String hint,
+    bool angka = true,
   }) {
     return TextFormField(
       controller: controller,
-      keyboardType: const TextInputType.numberWithOptions(
-        decimal: true,
-      ),
+      keyboardType: angka
+          ? const TextInputType.numberWithOptions(decimal: true)
+          : TextInputType.text,
       decoration: InputDecoration(
         labelText: label,
         hintText: hint,
@@ -126,10 +127,11 @@ class _InputPageState extends State<InputPage> {
           return '$label wajib diisi.';
         }
 
-        final angka = double.tryParse(value);
-
-        if (angka == null || !angka.isFinite || angka <= 0) {
-          return 'Masukkan angka yang valid.';
+        if (angka) {
+          final nilai = double.tryParse(value);
+          if (nilai == null || !nilai.isFinite || nilai <= 0) {
+            return 'Masukkan angka yang valid.';
+          }
         }
 
         return null;
@@ -179,6 +181,7 @@ class _InputPageState extends State<InputPage> {
                 label: 'Nama',
                 controller: namaController,
                 hint: 'Masukkan nama',
+                angka: false,
               ),
 
               const SizedBox(height: 15),
